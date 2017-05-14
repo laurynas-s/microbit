@@ -1,0 +1,8 @@
+{
+  "name": "microbit-code-repository",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.15.2",
+    "serve-static": "^1.12.2"
+  }
+}

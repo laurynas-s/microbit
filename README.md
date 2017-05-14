@@ -1,1 +1,2 @@
-# microbit
+# Microbit pamokos / Microbit lessons
+-------------------
