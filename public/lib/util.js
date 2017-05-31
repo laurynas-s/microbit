@@ -1,4 +1,4 @@
-var defaultOnLoad = function defaultOnLoad(Clipboard, hljs, status) {
+var defaultOnLoad = function defaultOnLoad(Clipboard, hljs, status, codeFile) {
     let clip = null;
     if (Clipboard.isSupported()) {
         clip = new Clipboard('.btn');
@@ -17,7 +17,7 @@ var defaultOnLoad = function defaultOnLoad(Clipboard, hljs, status) {
     }
 
     var client = new XMLHttpRequest();
-    client.open('GET', 'code.js');
+    client.open('GET', codeFile);
     client.onreadystatechange = function () {
         document.getElementById('code').innerHTML = client.responseText;
         hljs.initHighlighting();
